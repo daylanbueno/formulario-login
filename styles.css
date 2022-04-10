@@ -177,14 +177,11 @@ input#checkbox:checked::after {
 }
 
 .check-box-content input {
-  border: 0;
   width: 20px;
-  height: 28px;
-  border: 1px solid #868686;
-  box-sizing: border-box;
-  border-radius: 4px;
-  box-shadow: 0;
-  background: green;
+}
+
+.check-box-content input:hover {
+  cursor: pointer;
 }
 
 .check-box-content label {
