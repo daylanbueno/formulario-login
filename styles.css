@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 :root {
   --text-base: #afb6c2;
   --text-title: #d4ccb6;
@@ -31,7 +35,7 @@ input {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 16px;
   padding-left: 37px;
   border-radius: 4px;
@@ -40,6 +44,7 @@ input {
 
 .aside-form {
   padding: 45px;
+  width: 50%;
 }
 
 .content-form {
@@ -67,14 +72,14 @@ input {
   display: flex;
   margin-top: 55px;
   gap: 10px;
-  width: 335px;
+  width: 100%;
 }
 
 .header-form div h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 36px;
   color: var(--text-title);
 }
@@ -83,7 +88,7 @@ input {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   color: var(--text-base);
   margin-top: 5px;
@@ -98,7 +103,7 @@ input {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   color: var(--text-base);
   width: 335px;
@@ -188,8 +193,8 @@ input#checkbox:checked::after {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   color: #a9afb9;
 }
 
@@ -197,8 +202,8 @@ input#checkbox:checked::after {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -214,8 +219,8 @@ input#checkbox:checked::after {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   letter-spacing: 0.015em;
   text-transform: uppercase;
   color: #473404;
@@ -234,8 +239,8 @@ input#checkbox:checked::after {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   color: var(--primary-color);
 }
 
@@ -251,4 +256,30 @@ input#checkbox:checked::after {
 
 .side-image img {
   height: 99vh;
+}
+
+/*========responsive=================*/
+@media (max-width: 1024px) {
+  .content-form {
+    margin-top: 0;
+    margin-left: 0;
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aside-form {
+    width: 100%;
+  }
+
+  .content-form {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+  }
+
+  .side-image {
+    display: none;
+  }
 }
