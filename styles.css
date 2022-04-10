@@ -38,10 +38,6 @@ input {
   color: #a9afb9;
 }
 
-input:focus {
-  border-radius: 4px;
-  box-shadow: 0px 0px 0px 2px #ffde88;
-}
 
 .aside-form {
   padding: 45px;
@@ -119,26 +115,31 @@ input:focus {
   background-repeat: no-repeat;
   background-position: 13px 11px;
   border: 1px solid #ffc632;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 2px #ffde88;
 }
 
-.img-lock {
-  background: url(./asserts/lock-focus.svg);
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 30px;
-  left: 13px;
+.form-group #senha {
+  background-image: url(./asserts/lock.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 11px;
 }
 
-.img-lock:focus {
-  background: url(./asserts/lock-focus.svg);
+.form-group #senha:focus {
+  background-image: url(./asserts/lock-focus.svg);
+  background-repeat: no-repeat;
+    background-position: 13px 11px;
+    border: 1px solid #ffc632;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 2px #ffde88;
+
 }
 
 .img-eye {
   width: 20px;
   height: 20px;
   position: relative;
-  top: 52px;
+  top: 32px;
   left: 304px;
 }
 
@@ -153,15 +154,19 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
 .check-box-content input {
+  border: 0;
   width: 20px;
-  height: 20px;
+  height: 28px;
   border: 1px solid #868686;
   box-sizing: border-box;
   border-radius: 4px;
+  box-shadow: 0;
+  background: green;
 }
 
 .check-box-content label {
@@ -232,3 +237,5 @@ input:focus {
 .side-image img {
   height: 99vh;
 }
+
+
